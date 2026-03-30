@@ -2,7 +2,7 @@
 <h1 align="center">Hey there, I'm Parth Dagia <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"></h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=500&lines=Full+Stack+Developer+%F0%9F%92%BB;Open+Source+Contributor+%F0%9F%8C%8D;Software+Engineer+%F0%9F%9A%80;55%2B+PRs+Merged+%E2%9C%85" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=6C63FF&center=true&vCenter=true&random=false&width=500&lines=Full+Stack+Developer+%F0%9F%92%BB;Open+Source+Contributor+%F0%9F%8C%8D;Software+Engineer+%F0%9F%9A%80;35%2B+PRs+Merged+%E2%9C%85" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -24,14 +24,27 @@
 <br>
 
 <div align="center">
-  <img src="https://nirzak-streak-stats.vercel.app?user=parthdagia05&theme=tokyonight" height="170" alt="GitHub Streak" />
-  <img src="https://github-readme-stats.vercel.app/api?username=parthdagia05&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com?user=parthdagia05&theme=tokyonight&hide_border=true" height="170" alt="GitHub Streak" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parthdagia05&layout=compact&theme=tokyonight&hide_border=true" height="160" alt="Top Languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parthdagia05&theme=tokyonight" alt="Profile Details" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=parthdagia05&theme=tokyonight" height="170" alt="GitHub Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=parthdagia05&theme=tokyonight&utcOffset=5.5" height="170" alt="Productive Time" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parthdagia05&theme=tokyonight" height="170" alt="Top Languages by Repo" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=parthdagia05&theme=tokyonight" height="170" alt="Top Languages by Commit" />
 </div>
 
 <p align="center">
