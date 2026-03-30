@@ -24,27 +24,7 @@
 <br>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=parthdagia05&theme=tokyonight&hide_border=true" height="170" alt="GitHub Streak" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parthdagia05&theme=tokyonight" alt="Profile Details" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=parthdagia05&theme=tokyonight" height="170" alt="GitHub Stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=parthdagia05&theme=tokyonight&utcOffset=5.5" height="170" alt="Productive Time" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parthdagia05&theme=tokyonight" height="170" alt="Top Languages by Repo" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=parthdagia05&theme=tokyonight" height="170" alt="Top Languages by Commit" />
+  <img src="https://streak-stats.demolab.com?user=parthdagia05&theme=tokyonight&hide_border=true" width="700" alt="GitHub Streak" />
 </div>
 
 <p align="center">
