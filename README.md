@@ -72,7 +72,7 @@
   <a href="mailto:work.parthdagia@gmail.com" target="_blank">
     <img src="https://skillicons.dev/icons?i=gmail" width="47" height="35" alt="gmail logo" />
   </a>
-  <a href="https://linkedin.com/in/parthdagia" target="_blank">
+  <a href="" target="_blank">
     <img src="https://skillicons.dev/icons?i=linkedin" width="47" height="35" alt="linkedin logo" />
   </a>
   <a href="https://github.com/parthdagia05" target="_blank">
