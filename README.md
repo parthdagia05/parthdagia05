@@ -127,15 +127,6 @@
   <img width="98%" src="https://raw.githubusercontent.com/parthdagia05/parthdagia05/output/profile-night-rainbow.svg" alt="3D Contribution Calendar" />
 </p>
 
-<!-- ============ TROPHIES ============ -->
-<h3 align="center">🏆 Trophies</h3>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=parthdagia05&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" alt="Trophies" />
-</p>
-
-<br>
-
 <!-- ============ FOOTER ============ -->
 <p align="center"><i>“First, solve the problem. Then, write the code.” — John Johnson</i></p>
 
