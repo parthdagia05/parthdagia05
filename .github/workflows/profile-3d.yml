@@ -1,0 +1,36 @@
+name: Generate 3D Contribution Graph
+
+on:
+  schedule:
+    - cron: "0 */12 * * *" # every 12 hours
+  workflow_dispatch: # manual trigger
+  push:
+    branches: [main] # regenerate on profile updates
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate 3D contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      # Publish only the generated SVGs to a dedicated `output` branch.
+      # This keeps the bot commits OFF the default branch, so they never
+      # inflate your real contribution count.
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: profile-3d-contrib
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
