@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" font-family="'Fira Code', ui-monospace, monospace">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#1a0606"/>
+      <stop offset="45%" stop-color="#0a0303"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff5a3c"/>
+      <stop offset="40%" stop-color="#ff0000"/>
+      <stop offset="100%" stop-color="#7a0000"/>
+    </radialGradient>
+    <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161616"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="horn" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="320" fill="url(#bg)"/>
+
+  <!-- rising embers -->
+  <g fill="#ff2d00">
+    <circle cx="180" cy="300" r="2.5" opacity="0">
+      <animate attributeName="cy" values="300;70" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="300" r="1.8" opacity="0">
+      <animate attributeName="cy" values="300;90" dur="6s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="6s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="560" cy="300" r="2.2" opacity="0">
+      <animate attributeName="cy" values="300;80" dur="5.2s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.9;0" dur="5.2s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="630" cy="300" r="1.6" opacity="0">
+      <animate attributeName="cy" values="300;110" dur="6.8s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="6.8s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="300" r="2" opacity="0">
+      <animate attributeName="cy" values="300;60" dur="5.6s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.85;0" dur="5.6s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- devil: gentle laugh bob + rock -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="-1.6 400 180; 1.6 400 180; -1.6 400 180" dur="4s" repeatCount="indefinite"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; 0 -5; 0 0" dur="2s" repeatCount="indefinite"/>
+
+      <!-- horns -->
+      <path d="M300,95 C272,58 252,36 240,12 C276,40 308,58 326,82 Z" fill="url(#horn)" stroke="#3a0000" stroke-width="1.5"/>
+      <path d="M500,95 C528,58 548,36 560,12 C524,40 492,58 474,82 Z" fill="url(#horn)" stroke="#3a0000" stroke-width="1.5"/>
+
+      <!-- face -->
+      <path d="M258,168 C258,108 318,68 400,68 C482,68 542,108 542,168
+               C542,250 452,330 400,342 C348,330 258,250 258,168 Z"
+            fill="url(#face)" stroke="#2a0000" stroke-width="2"/>
+
+      <!-- eye glow halos -->
+      <g filter="url(#glow)" fill="#ff0000">
+        <ellipse cx="352" cy="166" rx="26" ry="16" opacity="0.85">
+          <animate attributeName="opacity" values="0.5;0.95;0.5" dur="1.6s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="448" cy="166" rx="26" ry="16" opacity="0.85">
+          <animate attributeName="opacity" values="0.5;0.95;0.5" dur="1.6s" repeatCount="indefinite"/>
+        </ellipse>
+      </g>
+      <!-- eyes (solid, angled, evil) -->
+      <g fill="#ff2200" stroke="#ffd24a" stroke-width="1">
+        <path d="M320,150 L384,168 L326,184 Z">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="1.6s" repeatCount="indefinite"/>
+        </path>
+        <path d="M480,150 L416,168 L474,184 Z">
+          <animate attributeName="opacity" values="0.8;1;0.8" dur="1.6s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <!-- hot pupils -->
+      <g fill="#ffe08a">
+        <circle cx="350" cy="167" r="4"/>
+        <circle cx="450" cy="167" r="4"/>
+      </g>
+
+      <!-- evil grin that laughs -->
+      <g>
+        <animateTransform attributeName="transform" type="scale"
+          values="1 1; 1 1.18; 1 1" dur="1.2s" additive="sum" repeatCount="indefinite"/>
+        <g transform="translate(0,-260)">
+          <path d="M322,490 Q400,576 478,490 Q400,524 322,490 Z" fill="#c40000" stroke="#ff3b1d" stroke-width="2"/>
+          <!-- teeth -->
+          <g fill="#f5f5f5">
+            <path d="M345,491 L361,491 L353,506 Z"/>
+            <path d="M375,494 L391,494 L383,512 Z"/>
+            <path d="M409,494 L425,494 L417,512 Z"/>
+            <path d="M439,491 L455,491 L447,506 Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
