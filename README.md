@@ -6,7 +6,7 @@
 
 # Parth Dagia
 
-**I build the layer underneath an agent —**
+**I build the layer underneath an agent:**
 **the part that has to be fast, cheap and correct when nobody is watching.**
 
 <sub>CNCF · Hyperledger · Sugar Labs &nbsp;|&nbsp; Go · C++17 · Java · Python · TypeScript &nbsp;|&nbsp; BITS Pilani '27 · Bengaluru</sub>
@@ -49,13 +49,13 @@ Production codebases, no onboarding, every change fenced by a test that fails on
 
 | Project | What it is | Lang | Merged |
 |---|---|---|:--:|
-| **[Music Blocks](https://github.com/sugarlabs/musicblocks)** + **[v4](https://github.com/sugarlabs/musicblocks-v4)** | Sugar Labs · nonprofit education software — **maintainer, GSoC '26** | TypeScript | **86** |
+| **[Music Blocks](https://github.com/sugarlabs/musicblocks)** + **[v4](https://github.com/sugarlabs/musicblocks-v4)** | Sugar Labs · nonprofit education software · **maintainer, GSoC '26** | TypeScript | **86** |
 | **[Kubescape](https://github.com/kubescape/kubescape)** | CNCF · Kubernetes security & admission control | Go | **39** |
 | **[WasmEdge](https://github.com/WasmEdge/WasmEdge)** | CNCF · WebAssembly runtime, loader/validator/executor | C++17 | **9** |
 | **[Besu](https://github.com/besu-eth/besu)** | Hyperledger · Ethereum execution client & EVM | Java | **6** |
 
 <details>
-<summary><b>Kubescape</b> — 39 PRs in three weeks, mostly by deleting things &nbsp;<code>Go</code></summary>
+<summary><b>Kubescape</b> · 39 PRs in three weeks, mostly by deleting things &nbsp;<code>Go</code></summary>
 
 <br>
 
@@ -67,33 +67,33 @@ Production codebases, no onboarding, every change fenced by a test that fails on
 </details>
 
 <details>
-<summary><b>Hyperledger Besu</b> — made the EVM stop allocating &nbsp;<code>Java · JMH</code></summary>
+<summary><b>Hyperledger Besu</b> · made the EVM stop allocating &nbsp;<code>Java · JMH</code></summary>
 
 <br>
 
-- **256-bit opcodes on a flat `long[]` operand stack, zero heap allocation.** `ADD` with carry propagation across four 64-bit limbs, `SUB` with borrow, plus `MUL`, `DIV` and bitwise ops — **~3.9x faster** than the boxed path. This is the arithmetic under *every* EVM opcode.
-- **Power-of-two fast paths** for `UInt256.div`, `addMod`, `mulMod`: Knuth Algorithm D replaced with a shift or a mask, **28–78% faster**, verified under JMH with property-based differential tests against `BigInteger`.
+- **256-bit opcodes on a flat `long[]` operand stack, zero heap allocation.** `ADD` with carry propagation across four 64-bit limbs, `SUB` with borrow, plus `MUL`, `DIV` and bitwise ops, **~3.9x faster** than the boxed path. This is the arithmetic under *every* EVM opcode.
+- **Power-of-two fast paths** for `UInt256.div`, `addMod`, `mulMod`: Knuth Algorithm D replaced with a shift or a mask, **28-78% faster**, verified under JMH with property-based differential tests against `BigInteger`.
 - Enabled NullAway null-safety analysis across `datatypes` and `ethereum:rlp`.
 
 </details>
 
 <details>
-<summary><b>WasmEdge</b> — post-quantum crypto and the Component Model &nbsp;<code>C++17 · CMake</code></summary>
+<summary><b>WasmEdge</b> · post-quantum crypto and the Component Model &nbsp;<code>C++17 · CMake</code></summary>
 
 <br>
 
 - **ML-KEM post-quantum key encapsulation** merged into the `wasi_crypto` plugin with FIPS 203 known-answer tests. Plus ECDSA and EdDSA public-key verification.
-- **Component Model value-section loader**, value-linearity enforcement, and core global/table type checks at instantiation — rejecting malformed components before they execute.
+- **Component Model value-section loader**, value-linearity enforcement, and core global/table type checks at instantiation, rejecting malformed components before they execute.
 - Enabled three official spec suites in CI: naming, invalid, memory64.
 
 </details>
 
 <details>
-<summary><b>Music Blocks</b> — maintainer, and the reason it loads now &nbsp;<code>TypeScript · React</code></summary>
+<summary><b>Music Blocks</b> · maintainer, and the reason it loads now &nbsp;<code>TypeScript · React</code></summary>
 
 <br>
 
-- **Total Blocking Time down ~66%** and a **five-second startup delay deleted**, by lazy-loading 17 modules — **3.8 MB** off the bundle — held in place with Lighthouse CI budgets.
+- **Total Blocking Time down ~66%** and a **five-second startup delay deleted**, by lazy-loading 17 modules (**3.8 MB** off the bundle), held in place with Lighthouse CI budgets.
 - **Designed the brick-rendering engine:** stroke-width-aware SVG outline paths with rounded corners and connector notches, so bricks snap together at any scale. Path geometry is unit-tested.
 - Rebuilt the Brick Palette as a declarative system where one schema object determines what renders and how it groups.
 - Review and merge community pull requests as a maintainer.
@@ -112,11 +112,11 @@ Production codebases, no onboarding, every change fenced by a test that fails on
 **A deterministic enforcement kernel for agent actions**
 `Python` `SQLite`
 
-Keeps the model **off the safety path** — the check costs zero tokens and returns the same answer every time. Nine deterministic checks, fail-closed on any store failure, and a CI test that fails the build if the kernel ever imports the model client.
+Keeps the model **off the safety path**, so the check costs zero tokens and returns the same answer every time. Nine deterministic checks, fail-closed on any store failure, and a CI test that fails the build if the kernel ever imports the model client.
 
 Two-phase idempotency with a recovery scan, so a crash mid-capture and a duplicate webhook each leave **exactly one debit**.
 
-Content-addressed cache over every model call — a whole eval run replays byte-identically **with no API key**.
+Content-addressed cache over every model call, so a whole eval run replays byte-identically **with no API key**.
 
 > Attack success **80% → 0%** across seven attack classes, scored by programmatic oracles, no judge model. The 12% false-block rate is published beside it, not buried.
 
@@ -172,7 +172,7 @@ compilers      LLVM IR generation, pass pipelines, ORC JIT, AOT/JIT, WebAssembly
 <div align="center">
 
 <sub><b>note:</b> the contribution graph below is generated by GitHub and cannot be disabled.
-It counts days I pushed to a non-fork repository — a strictly smaller set than days I did work,
+It counts days I pushed to a non-fork repository, a strictly smaller set than days I did work,
 which is a strictly smaller set than days I suffered. The table above is the honest one.</sub>
 
 </div>
